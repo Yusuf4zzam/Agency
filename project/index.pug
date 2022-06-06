@@ -1,0 +1,233 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content="This Website Just For Practice")
+        title Agency
+        link(rel="stylesheet", href="css/all.min.css")
+        link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/main.css")
+
+    body 
+        //- Start Settings box
+        .settings
+                .icon
+                    i.fas.fa-cog
+                .setting-container
+                    .option-box 
+                        h4 Colors
+                        ul.page-colors
+                            li(data-color="#ff9800").active
+                            li(data-color="#2196F3")
+                            li(data-color="#F44336")
+                            li(data-color="#E91E63")
+                            li(data-color="#4CAF50")
+                    .option-box 
+                        h4 Change Image
+                        ul.change-images
+                            li(data-imgIndex="0").active 1
+                            li(data-imgIndex="1") 2
+                            li(data-imgIndex="2") 3
+                            li(data-imgIndex="3") 4
+                            li(data-imgIndex="4") 5
+                            li(data-imgIndex="5") 6
+                    .option-box 
+                        h4 Backgrounds Option
+                        .checkbox
+                            input(type="checkbox", id="background-check")
+                            label(for="background-check") 
+        //- Start Landing Page
+        .landing-page 
+            .overlay
+            .container 
+                header
+                    .logo 
+                        h2 
+                            span A
+                            |gency
+                    ul.ul-list 
+                        li 
+                            a(href="#").active Home 
+                        li 
+                            a(href="#about") About
+                        li 
+                            a(href="#") Servies
+                        li 
+                            a(href="#") Products
+                        li 
+                            a(href="#") Contact 
+                    .toggle-button 
+                        span 
+                        span 
+                        span
+                .slider 
+                    .content 
+                        h1 We Are 
+                            span Creative 
+                            | Agency
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores explicabo cumque voluptas assumenda, cum accusamus.
+        
+        //- Start About Us Box
+        .about-us#about
+            .container 
+                .text-box 
+                    h2 About Us 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusantium! Laudantium recusandae illum ex odit. Nisi dolorum ullam quia repellendus est nobis, repudiandae illo voluptatibus distinctio ad nesciunt minus inventore quo sit temporibus delectus cum iste deserunt fugiat rem alias. Itaque dolorem nostrum alias omnis. Rem consequuntur harum dignissimos quaerat?
+                .img-box 
+                    img(src="images/about-us.jpg", alt="")
+
+        //- Start Skills Box
+        .skills
+            .container
+                .header-box 
+                    h2 Our Skills
+
+                .skills-box
+                    .skill-name 
+                        span HTML 
+                    .skill-progress
+                        span(data-progress="95%")
+
+                .skills-box 
+                    .skill-name 
+                        span CSS 
+                    .skill-progress 
+                        span(data-progress="90%")
+
+                .skills-box 
+                    .skill-name 
+                        span JS 
+                    .skill-progress 
+                        span(data-progress="80%")
+
+                .skills-box 
+                    .skill-name 
+                        span Paython 
+                    .skill-progress 
+                        span(data-progress="50%")
+
+                .skills-box 
+                    .skill-name 
+                        span C++
+                    .skill-progress 
+                        span(data-progress="60%")
+
+        //- Start Gallery Box
+        .gallery
+            .container 
+                .header-box 
+                    h2 Gallery
+                .content
+                .load-more
+                    a(href="#") load more
+        
+        //- Start Timeline Box
+        .timeline 
+            .container 
+                .content 
+                    ul 
+                        li(data-date="2017" data-index = "0").active
+                        li(data-date="2018" data-index = "1")
+                        li(data-date="2019" data-index = "2")
+                        li(data-date="2020" data-index = "3")
+                        li(data-date="2021" data-index = "4")
+                    .box-container 
+                        .box
+                            h3 Heading Title 1
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum velit numquam laborum ipsam optio facere dicta tempore reprehenderit, ab doloribus rem, ullam maiores, esse aliquam repellendus possimus temporibus a! Est similique dolor consequuntur aliquid quaerat sunt, veritatis velit dignissimos debitis ducimus autem excepturi nisi id eum hic vel asperiores perferendis amet impedit molestiae ut libero corporis tempora. Consectetur temporibus fugiat voluptate! Laboriosam hic molestiae doloribus sapiente, repellendus magni adipisci atque.
+                            span 2017
+                        .box 
+                            h3 Heading Title 2
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum velit numquam laborum ipsam optio facere dicta tempore reprehenderit, ab doloribus rem, ullam maiores, esse aliquam repellendus possimus temporibus a! Est similique dolor consequuntur aliquid quaerat sunt, veritatis velit dignissimos debitis ducimus autem excepturi nisi id eum hic vel asperiores perferendis amet impedit molestiae ut libero corporis tempora. Consectetur temporibus fugiat voluptate! Laboriosam hic molestiae doloribus sapiente, repellendus magni adipisci atque.
+                            span 2018
+                        .box 
+                            h3 Heading Title 3
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum velit numquam laborum ipsam optio facere dicta tempore reprehenderit, ab doloribus rem, ullam maiores, esse aliquam repellendus possimus temporibus a! Est similique dolor consequuntur aliquid quaerat sunt, veritatis velit dignissimos debitis ducimus autem excepturi nisi id eum hic vel asperiores perferendis amet impedit molestiae ut libero corporis tempora. Consectetur temporibus fugiat voluptate! Laboriosam hic molestiae doloribus sapiente, repellendus magni adipisci atque.
+                            span 2019
+                        .box 
+                            h3 Heading Title 4
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum velit numquam laborum ipsam optio facere dicta tempore reprehenderit, ab doloribus rem, ullam maiores, esse aliquam repellendus possimus temporibus a! Est similique dolor consequuntur aliquid quaerat sunt, veritatis velit dignissimos debitis ducimus autem excepturi nisi id eum hic vel asperiores perferendis amet impedit molestiae ut libero corporis tempora. Consectetur temporibus fugiat voluptate! Laboriosam hic molestiae doloribus sapiente, repellendus magni adipisci atque.
+                            span 2020
+                        .box 
+                            h3 Heading Title 5
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum velit numquam laborum ipsam optio facere dicta tempore reprehenderit, ab doloribus rem, ullam maiores, esse aliquam repellendus possimus temporibus a! Est similique dolor consequuntur aliquid quaerat sunt, veritatis velit dignissimos debitis ducimus autem excepturi nisi id eum hic vel asperiores perferendis amet impedit molestiae ut libero corporis tempora. Consectetur temporibus fugiat voluptate! Laboriosam hic molestiae doloribus sapiente, repellendus magni adipisci atque.
+                            span 2021
+        //- Start Our Features Box
+        .features 
+            .container
+                .heading 
+                    h2 Our Features
+                .content 
+                    .box 
+                        .img-box 
+                            img(src="images/Icon_01.png", alt="")
+                        .text-box 
+                            h3 Heading Title 
+                            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officiis fuga explicabo nam illo quae.
+                    .box 
+                        .img-box 
+                            img(src="images/Icon_02.png", alt="")
+                        .text-box 
+                            h3 Heading Title 
+                            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officiis fuga explicabo nam illo quae.
+                    .box 
+                        .img-box 
+                            img(src="images/Icon_03.png", alt="")
+                        .text-box 
+                            h3 Heading Title 
+                            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officiis fuga explicabo nam illo quae.
+                    .box 
+                        .img-box 
+                            img(src="images/Icon_04.png", alt="")
+                        .text-box 
+                            h3 Heading Title 
+                            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officiis fuga explicabo nam illo quae.
+                    .box 
+                        .img-box 
+                            img(src="images/Icon_05.png", alt="")
+                        .text-box 
+                            h3 Heading Title 
+                            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officiis fuga explicabo nam illo quae.
+                    .box 
+                        .img-box 
+                            img(src="images/Icon_06.png", alt="")
+                        .text-box 
+                            h3 Heading Title 
+                            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officiis fuga explicabo nam illo quae.
+        
+        //- Start Testimonials Box
+        .testimonilas 
+            .container 
+                .heading 
+                    h2 Testimonials
+                .content 
+                    .box 
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt repellat velit sit perspiciatis. Suscipit, laborum.
+                        .content-box 
+                            .img-box 
+                                img(src="images/testmonilas_01.jpg", alt="")
+                            .text-box 
+                                h3 Yusuf Azzam 
+                                p CEO Of Company
+                    .box 
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt repellat velit sit perspiciatis. Suscipit, laborum.
+                        .content-box 
+                            .img-box 
+                                img(src="images/testmonilas_02.jpg", alt="")
+                            .text-box 
+                                h3 Eslam Sabri 
+                                p Manager
+                    .box 
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt repellat velit sit perspiciatis. Suscipit, laborum.
+                        .content-box 
+                            .img-box 
+                                img(src="images/testmonilas_03.jpg", alt="")
+                            .text-box 
+                                h3 Mohamed Ali 
+                                p Manager assistant
+
+        //- Overlay Box For The gallery
+        .overlay-box
+        script(src="js/all.js") 

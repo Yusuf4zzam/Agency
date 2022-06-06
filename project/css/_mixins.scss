@@ -1,0 +1,19 @@
+@mixin responsiveDesign($e) {
+  @if $e == mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $e == small {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $e == medium {
+    @media (min-width: 992px) and (max-width: 1999px) {
+      @content;
+    }
+  } @else if $e == large {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
